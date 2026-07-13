@@ -36,10 +36,11 @@ theme:
 
 nav:
   - 首页: index.md
-  - 课程目录: catalog.md
-  - 数学分析:
-      - 课程攻略: courses/math-analysis/index.md
-      - 资料清单: courses/math-analysis/resources/index.md
+  - 课程目录:
+      - 课程总览: catalog.md
+      - 数学分析:
+          - 课程攻略: courses/math-analysis/index.md
+          - 资料清单: courses/math-analysis/resources/index.md
   - 如何贡献: contributing.md
   - 版权与隐私: policies/copyright.md
 
