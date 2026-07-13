@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: 中山大学课程攻略共享计划
+site_description: 由同学共同维护的中山大学课程资料与学习经验库
+site_url: https://azenann.github.io/sysuclass/
+repo_url: https://github.com/AzenAnn/sysuclass
+repo_name: AzenAnn/sysuclass
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+
+nav:
+  - 首页: index.md
+  - 课程目录: catalog.md
+  - 数学分析:
+      - 课程攻略: courses/math-analysis/index.md
+      - 资料清单: courses/math-analysis/resources/index.md
+  - 如何贡献: contributing.md
+  - 版权与隐私: policies/copyright.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+extra:
+  social: []
+  generator: false
+
+copyright: 本项目非中山大学官方项目 · 贡献者原创内容采用 CC BY-NC-SA 4.0

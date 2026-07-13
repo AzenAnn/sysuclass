@@ -1,0 +1,57 @@
+name: 资料投稿或课程更新
+description: 不方便提交 PR 时，可先提交资料说明；确认合规后再附文件
+title: "[资料投稿] 课程名称 - 资料简称"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先不要上传来源或授权不明确的文件。公开 Issue 中也不要留下个人信息。
+  - type: input
+    id: course
+    attributes:
+      label: 课程名称
+      placeholder: 例如：数学分析
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: 适用范围
+      description: 学年学期、院系、课程代码或章节；不确定处请写“待核验”
+      placeholder: 例如：2025 秋，第一至三章
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 资料或更新说明
+      description: 说明内容、格式、用途和需要维护者协助的地方
+    validations:
+      required: true
+  - type: dropdown
+    id: permission
+    attributes:
+      label: 来源与授权
+      options:
+        - 本人原创，愿意按 CC BY-NC-SA 4.0 分享
+        - 第三方材料，已获得明确的公开再分发授权
+        - 开放许可材料，可提供来源与许可链接
+        - 不确定，请维护者先判断（此时不要上传文件）
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 来源或授权依据
+      placeholder: 本人原创；或填写原页面/许可链接
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 投稿确认
+      options:
+        - label: 文件不含姓名、学号、邮箱、成绩、签名等个人信息
+          required: true
+        - label: 内容不涉及盗版、付费资源、未授权课件或进行中的考核
+          required: true
