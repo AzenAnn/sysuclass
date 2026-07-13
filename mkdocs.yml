@@ -11,7 +11,6 @@ theme:
   language: zh
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
     - navigation.footer
     - search.highlight
@@ -41,6 +40,9 @@ nav:
       - 数学分析:
           - 课程攻略: courses/math-analysis/index.md
           - 资料清单: courses/math-analysis/resources/index.md
+      - 高等代数:
+          - 课程攻略: courses/advanced-algebra/index.md
+          - 资料清单: courses/advanced-algebra/resources/index.md
   - 如何贡献: contributing.md
   - 版权与隐私: policies/copyright.md
 
@@ -49,6 +51,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true

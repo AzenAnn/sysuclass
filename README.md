@@ -13,7 +13,7 @@
 - 课程目录、课程页和资源登记表；
 - 网页端与命令行两套贡献教程；
 - Issue、Pull Request 模板及版权/隐私检查；
-- “数学分析”示范课程和资料分类目录。
+- “数学分析”“高等代数”示范课程和资料分类目录。
 
 ## 本地预览
 
@@ -32,7 +32,7 @@ python -m mkdocs build --strict
 python scripts/check_site_links.py
 ```
 
-完整投稿步骤见[如何贡献](docs/contributing.md)，第一门示范课程见[数学分析](docs/courses/math-analysis/index.md)。
+完整投稿步骤见[如何贡献](docs/contributing.md)，示范课程见[数学分析](docs/courses/math-analysis/index.md)和[高等代数](docs/courses/advanced-algebra/index.md)。
 
 ## 许可
 
